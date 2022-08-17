@@ -1,0 +1,27 @@
+server:
+  port: 82
+
+spring:
+  application:
+    name: reggie
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///reggie
+      username: root
+      password: 1234
+  cache:
+    redis:
+      time-to-live: 1800000 #设置缓存数据的过期时间
+
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+reggie:
+  path: C:/upload/img/
