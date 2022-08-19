@@ -1,5 +1,6 @@
 server:
   port: 82
+  address: 192.168.31.108
 
 spring:
   application:
@@ -7,7 +8,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql:///reggie
+      url: jdbc:mysql://192.168.31.108:3306/reggie
       username: root
       password: 1234
   cache:
