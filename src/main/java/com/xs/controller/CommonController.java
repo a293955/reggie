@@ -33,7 +33,7 @@ public class CommonController {
     @PostMapping("/upload")
     public R<String> upload(MultipartFile file) {
         //file是临时文件
-        log.info(file.toString());
+        //log.info(file.toString());
         //原始文件名
         String originalFilename = file.getOriginalFilename();
         //获取后缀名

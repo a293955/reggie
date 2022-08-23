@@ -31,7 +31,7 @@ public class EmployeeController {
      */
     @GetMapping("/{id}")
     public R<Employee> getEmployeeById(@PathVariable Long id) {
-        log.info(String.valueOf(id));
+        //log.info(String.valueOf(id));
         return employeeService.getEmplyeeById(id);
     }
     /**
@@ -39,7 +39,7 @@ public class EmployeeController {
      */
     @PutMapping
     public R<String> updateEmployee(@RequestBody Employee employee) {
-        log.info(employee.toString());
+        //log.info(employee.toString());
         return employeeService.updateEmployee(employee);
     }
     /**
@@ -47,7 +47,7 @@ public class EmployeeController {
      */
     @GetMapping("/page")
     public R<Page<Employee>> getByPage(Integer page, Integer pageSize, String name) {
-        log.info("page：{}, pageSize：{}, name：{}", page, pageSize, name);
+        //log.info("page：{}, pageSize：{}, name：{}", page, pageSize, name);
         return employeeService.getByPage(page, pageSize, name);
     }
     /**
@@ -55,7 +55,7 @@ public class EmployeeController {
      */
     @PostMapping
     public R<String> saveEmployee(@RequestBody Employee employee) {
-        log.info("新增员工，员工信息：{}", employee.toString());
+        //log.info("新增员工，员工信息：{}", employee.toString());
         return employeeService.saveEmployee(employee);
     }
     /**

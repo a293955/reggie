@@ -81,7 +81,7 @@ public class DishController {
      */
     @PutMapping
     public R<String> updateWithFlavor(@RequestBody DishDto dishDto){
-        log.info(dishDto.toString());
+        //log.info(dishDto.toString());
         return dishService.updateWithFlavor(dishDto);
     }
 }
