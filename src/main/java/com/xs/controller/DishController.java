@@ -48,7 +48,7 @@ public class DishController {
      */
     @PostMapping
     public R<String> addDish(@RequestBody DishDto dishDto) {
-        log.info(dishDto.toString());
+        //log.info(dishDto.toString());
         return dishService.addDish(dishDto);
     }
 

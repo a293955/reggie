@@ -5,7 +5,6 @@ import com.xs.entity.Login;
 import com.xs.entity.User;
 import com.xs.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
